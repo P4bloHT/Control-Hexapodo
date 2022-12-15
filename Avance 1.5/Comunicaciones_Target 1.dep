@@ -1,0 +1,10 @@
+Dependencies for Project 'Comunicaciones', Target 'Target 1': (DO NOT MODIFY !)
+F (.\comunicaciones.c)(0x637C0172)(--c99 -c --cpu Cortex-M4 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\comunicaciones.o --omf_browse .\comunicaciones.crf --depend .\comunicaciones.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (tm4c123gh6pm.h)(0x5ABBE707)
+I (Nokia5110.h)(0x62B76C7C)
+F (.\Nokia5110.c)(0x6378F1CD)(--c99 -c --cpu Cortex-M4 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\nokia5110.o --omf_browse .\nokia5110.crf --depend .\nokia5110.d)
+I (Nokia5110.h)(0x62B76C7C)
+F (.\Nokia5110.h)(0x62B76C7C)()
+F (.\startup.s)(0x5701F018)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\tm4c123gh6pm.h)(0x5ABBE707)()
