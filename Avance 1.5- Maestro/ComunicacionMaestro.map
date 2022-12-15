@@ -1,0 +1,525 @@
+ARM Linker, 5.03 [Build 76] [MDK-ARM Lite]
+
+==============================================================================
+
+Section Cross References
+
+    comunicaciones maestro.o(i.SysTick_Handler) refers to comunicaciones maestro.o(.data) for contadorGlobal
+    comunicaciones maestro.o(i.TransmiteCadena) refers to comunicaciones maestro.o(i.TxCarU0) for TxCarU0
+    comunicaciones maestro.o(i.accion_hexapodo) refers to comunicaciones maestro.o(i.genera_secuencia) for genera_secuencia
+    comunicaciones maestro.o(i.delayms) refers to comunicaciones maestro.o(.data) for contadorGlobal
+    comunicaciones maestro.o(i.genera_secuencia) refers to comunicaciones maestro.o(i.RxCarU0) for RxCarU0
+    comunicaciones maestro.o(i.main) refers to nokia5110.o(i.Nokia5110_Init) for Nokia5110_Init
+    comunicaciones maestro.o(i.main) refers to nokia5110.o(i.Nokia5110_ClearBuffer) for Nokia5110_ClearBuffer
+    comunicaciones maestro.o(i.main) refers to comunicaciones maestro.o(i.config_portF) for config_portF
+    comunicaciones maestro.o(i.main) refers to comunicaciones maestro.o(i.ConfiguraSysTick) for ConfiguraSysTick
+    comunicaciones maestro.o(i.main) refers to comunicaciones maestro.o(i.ConfigUART0) for ConfigUART0
+    comunicaciones maestro.o(i.main) refers to comunicaciones maestro.o(i.ConfigUART2) for ConfigUART2
+    comunicaciones maestro.o(i.main) refers to comunicaciones maestro.o(i.setupADC) for setupADC
+    comunicaciones maestro.o(i.main) refers to comunicaciones maestro.o(i.delayms) for delayms
+    comunicaciones maestro.o(i.main) refers to comunicaciones maestro.o(i.TxCarU0) for TxCarU0
+    comunicaciones maestro.o(i.main) refers to comunicaciones maestro.o(i.TransmiteCadena) for TransmiteCadena
+    comunicaciones maestro.o(i.main) refers to dfltui.o(.text) for __aeabi_ui2d
+    comunicaciones maestro.o(i.main) refers to dmul.o(.text) for __aeabi_dmul
+    comunicaciones maestro.o(i.main) refers to ddiv.o(.text) for __aeabi_ddiv
+    comunicaciones maestro.o(i.main) refers to dfixui.o(.text) for __aeabi_d2uiz
+    comunicaciones maestro.o(i.main) refers to comunicaciones maestro.o(i.TxCarU2) for TxCarU2
+    comunicaciones maestro.o(i.main) refers to nokia5110.o(i.Nokia5110_DrawFullImage) for Nokia5110_DrawFullImage
+    comunicaciones maestro.o(i.main) refers to comunicaciones maestro.o(.constdata) for tabla1
+    comunicaciones maestro.o(i.mov_joystick_ShowNokia) refers to comunicaciones maestro.o(i.RxCarU0) for RxCarU0
+    comunicaciones maestro.o(i.mov_joystick_ShowNokia) refers to nokia5110.o(i.Nokia5110_DrawFullImage) for Nokia5110_DrawFullImage
+    comunicaciones maestro.o(i.mov_joystick_ShowNokia) refers to comunicaciones maestro.o(.constdata) for tabla1
+    comunicaciones maestro.o(i.mov_joystick_ShowNokia) refers to comunicaciones maestro.o(.data) for mov
+    nokia5110.o(i.Nokia5110_Clear) refers to nokia5110.o(i.lcdwrite) for lcdwrite
+    nokia5110.o(i.Nokia5110_Clear) refers to nokia5110.o(i.Nokia5110_SetCursor) for Nokia5110_SetCursor
+    nokia5110.o(i.Nokia5110_ClearBuffer) refers to nokia5110.o(.bss) for Screen
+    nokia5110.o(i.Nokia5110_DisplayBuffer) refers to nokia5110.o(i.Nokia5110_DrawFullImage) for Nokia5110_DrawFullImage
+    nokia5110.o(i.Nokia5110_DisplayBuffer) refers to nokia5110.o(.bss) for Screen
+    nokia5110.o(i.Nokia5110_DrawFullImage) refers to nokia5110.o(i.Nokia5110_SetCursor) for Nokia5110_SetCursor
+    nokia5110.o(i.Nokia5110_DrawFullImage) refers to nokia5110.o(i.lcdwrite) for lcdwrite
+    nokia5110.o(i.Nokia5110_Init) refers to nokia5110.o(i.lcdwrite) for lcdwrite
+    nokia5110.o(i.Nokia5110_OutChar) refers to nokia5110.o(i.lcdwrite) for lcdwrite
+    nokia5110.o(i.Nokia5110_OutChar) refers to nokia5110.o(.constdata) for ASCII
+    nokia5110.o(i.Nokia5110_OutChar2) refers to nokia5110.o(i.lcdwrite) for lcdwrite
+    nokia5110.o(i.Nokia5110_OutChar2) refers to nokia5110.o(.constdata) for ASCII
+    nokia5110.o(i.Nokia5110_OutString) refers to nokia5110.o(i.Nokia5110_OutChar) for Nokia5110_OutChar
+    nokia5110.o(i.Nokia5110_OutUDec) refers to nokia5110.o(i.Nokia5110_OutString) for Nokia5110_OutString
+    nokia5110.o(i.Nokia5110_OutUDec) refers to nokia5110.o(i.Nokia5110_OutChar) for Nokia5110_OutChar
+    nokia5110.o(i.Nokia5110_PrintBMP) refers to nokia5110.o(.bss) for Screen
+    nokia5110.o(i.Nokia5110_SetCursor) refers to nokia5110.o(i.lcdwrite) for lcdwrite
+    nokia5110.o(i.Nokia5110_SetCursorChar) refers to nokia5110.o(i.lcdwrite) for lcdwrite
+    nokia5110.o(i.Nokia5110_SetCursorChar) refers to nokia5110.o(i.Nokia5110_OutChar) for Nokia5110_OutChar
+    nokia5110.o(i.Nokia5110_SetCursorChar) refers to nokia5110.o(i.Nokia5110_OutChar2) for Nokia5110_OutChar2
+    startup.o(RESET) refers to startup.o(STACK) for StackMem
+    startup.o(RESET) refers to comunicaciones maestro.o(i.SysTick_Handler) for SysTick_Handler
+    startup.o(RESET) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixui.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to comunicaciones maestro.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to comunicaciones maestro.o(i.main) for main
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing comunicaciones maestro.o(i.RxCarU0), (24 bytes).
+    Removing comunicaciones maestro.o(i.RxCarU2), (24 bytes).
+    Removing comunicaciones maestro.o(i.accion_hexapodo), (108 bytes).
+    Removing comunicaciones maestro.o(i.genera_secuencia), (18 bytes).
+    Removing comunicaciones maestro.o(i.mov_joystick_ShowNokia), (128 bytes).
+    Removing nokia5110.o(i.Nokia5110_Clear), (32 bytes).
+    Removing nokia5110.o(i.Nokia5110_DisplayBuffer), (16 bytes).
+    Removing nokia5110.o(i.Nokia5110_OutChar), (64 bytes).
+    Removing nokia5110.o(i.Nokia5110_OutChar2), (88 bytes).
+    Removing nokia5110.o(i.Nokia5110_OutString), (22 bytes).
+    Removing nokia5110.o(i.Nokia5110_OutUDec), (412 bytes).
+    Removing nokia5110.o(i.Nokia5110_PrintBMP), (424 bytes).
+    Removing nokia5110.o(i.Nokia5110_SetCursorChar), (104 bytes).
+    Removing nokia5110.o(.constdata), (480 bytes).
+    Removing startup.o(HEAP), (0 bytes).
+    Removing startup.o(.text), (28 bytes).
+
+16 unused section(s) (total 1972 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      644  startup.o(RESET)
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixui.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  dfltui.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    Nokia5110.c                              0x00000000   Number         0  nokia5110.o ABSOLUTE
+    comunicaciones maestro.c                 0x00000000   Number         0  comunicaciones maestro.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    startup.s                                0x00000000   Number         0  startup.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x00000284   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000284   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x00000288   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x0000028c   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x0000028c   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x0000028c   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x00000294   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000294   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x00000294   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x00000294   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x00000298   Section        0  dmul.o(.text)
+    .text                                    0x0000037c   Section        0  ddiv.o(.text)
+    .text                                    0x0000045a   Section        0  dfltui.o(.text)
+    .text                                    0x00000474   Section        0  dfixui.o(.text)
+    .text                                    0x000004a6   Section        0  llushr.o(.text)
+    .text                                    0x000004c6   Section        0  depilogue.o(.text)
+    .text                                    0x000004c6   Section        0  iusefp.o(.text)
+    .text                                    0x00000584   Section       36  init.o(.text)
+    .text                                    0x000005a8   Section        0  llshl.o(.text)
+    i.ConfigUART0                            0x000005c8   Section        0  comunicaciones maestro.o(i.ConfigUART0)
+    i.ConfigUART2                            0x00000690   Section        0  comunicaciones maestro.o(i.ConfigUART2)
+    i.ConfiguraSysTick                       0x00000784   Section        0  comunicaciones maestro.o(i.ConfiguraSysTick)
+    i.Nokia5110_ClearBuffer                  0x000007c0   Section        0  nokia5110.o(i.Nokia5110_ClearBuffer)
+    i.Nokia5110_DrawFullImage                0x000007d8   Section        0  nokia5110.o(i.Nokia5110_DrawFullImage)
+    i.Nokia5110_Init                         0x000007fc   Section        0  nokia5110.o(i.Nokia5110_Init)
+    i.Nokia5110_SetCursor                    0x0000097c   Section        0  nokia5110.o(i.Nokia5110_SetCursor)
+    i.SysTick_Handler                        0x000009ac   Section        0  comunicaciones maestro.o(i.SysTick_Handler)
+    i.TransmiteCadena                        0x000009e0   Section        0  comunicaciones maestro.o(i.TransmiteCadena)
+    i.TxCarU0                                0x000009fc   Section        0  comunicaciones maestro.o(i.TxCarU0)
+    i.TxCarU2                                0x00000a14   Section        0  comunicaciones maestro.o(i.TxCarU2)
+    i.__scatterload_copy                     0x00000a2c   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00000a3a   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00000a3c   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.config_portF                           0x00000a4c   Section        0  comunicaciones maestro.o(i.config_portF)
+    i.delayms                                0x00000a88   Section        0  comunicaciones maestro.o(i.delayms)
+    i.lcdwrite                               0x00000aa0   Section        0  nokia5110.o(i.lcdwrite)
+    lcdwrite                                 0x00000aa1   Thumb Code    66  nokia5110.o(i.lcdwrite)
+    i.main                                   0x00000aec   Section        0  comunicaciones maestro.o(i.main)
+    i.setupADC                               0x00000cdc   Section        0  comunicaciones maestro.o(i.setupADC)
+    .constdata                               0x00000e14   Section     3000  comunicaciones maestro.o(.constdata)
+    ASCII                                    0x00000e14   Data         480  comunicaciones maestro.o(.constdata)
+    .data                                    0x20000000   Section       10  comunicaciones maestro.o(.data)
+    .bss                                     0x2000000c   Section      504  nokia5110.o(.bss)
+    STACK                                    0x20000208   Section     1024  startup.o(STACK)
+    StackMem                                 0x20000208   Data           0  startup.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  comunicaciones maestro.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  startup.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    Reset_Handler                            0x0000026d   Thumb Code     0  startup.o(RESET)
+    NMI_Handler                              0x00000271   Thumb Code     2  startup.o(RESET)
+    HardFault_Handler                        0x00000273   Thumb Code     2  startup.o(RESET)
+    MemManage_Handler                        0x00000275   Thumb Code     2  startup.o(RESET)
+    BusFault_Handler                         0x00000277   Thumb Code     2  startup.o(RESET)
+    UsageFault_Handler                       0x00000279   Thumb Code     2  startup.o(RESET)
+    SVC_Handler                              0x0000027b   Thumb Code     2  startup.o(RESET)
+    DebugMon_Handler                         0x0000027d   Thumb Code     2  startup.o(RESET)
+    PendSV_Handler                           0x0000027f   Thumb Code     2  startup.o(RESET)
+    ADC0Seq0_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC0Seq1_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC0Seq2_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC0Seq3_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC1Seq0_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC1Seq1_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC1Seq2_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC1Seq3_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    CAN0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    CAN1_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    CAN2_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    Comp0_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    Comp1_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    Comp2_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    Ethernet_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ExtBus_Handler                           0x00000283   Thumb Code     0  startup.o(RESET)
+    FPU_Handler                              0x00000283   Thumb Code     0  startup.o(RESET)
+    Fan0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    FlashCtl_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortA_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortB_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortC_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortD_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortE_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortF_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortG_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortH_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortJ_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortK_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortL_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortM_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortN_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP1_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP2_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP3_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP4_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP5_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP6_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP7_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ1_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ2_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ3_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ4_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ5_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ6_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ7_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortR_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortS_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    Hibernate_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    I2C0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    I2C1_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    I2C2_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    I2C3_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    I2C4_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    I2C5_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    I2S0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    LPC0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    PECI0_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM0Fault_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM0Generator0_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM0Generator1_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM0Generator2_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM0Generator3_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM1Fault_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM1Generator0_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM1Generator1_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM1Generator2_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM1Generator3_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    Quadrature0_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    Quadrature1_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    Quadrature2_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    SSI0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    SSI1_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    SSI2_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    SSI3_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    SysCtl_Handler                           0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer0A_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer0B_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer1A_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer1B_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer2A_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer2B_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer3A_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer3B_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer4A_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer4B_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer5A_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer5B_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    UART0_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART1_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART2_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART3_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART4_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART5_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART6_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART7_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    USB0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    WDT_Handler                              0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer0A_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer0B_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer1A_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer1B_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer2A_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer2B_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer3A_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer3B_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer4A_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer4B_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer5A_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer5B_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    uDMA_Error                               0x00000283   Thumb Code     0  startup.o(RESET)
+    uDMA_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    __main                                   0x00000285   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000285   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x00000289   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x0000028d   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x0000028d   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x0000028d   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x0000028d   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000295   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000295   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    __aeabi_dmul                             0x00000299   Thumb Code   228  dmul.o(.text)
+    __aeabi_ddiv                             0x0000037d   Thumb Code   222  ddiv.o(.text)
+    __aeabi_ui2d                             0x0000045b   Thumb Code    26  dfltui.o(.text)
+    __aeabi_d2uiz                            0x00000475   Thumb Code    50  dfixui.o(.text)
+    __aeabi_llsr                             0x000004a7   Thumb Code    32  llushr.o(.text)
+    _ll_ushift_r                             0x000004a7   Thumb Code     0  llushr.o(.text)
+    __I$use$fp                               0x000004c7   Thumb Code     0  iusefp.o(.text)
+    _double_round                            0x000004c7   Thumb Code    26  depilogue.o(.text)
+    _double_epilogue                         0x000004e1   Thumb Code   164  depilogue.o(.text)
+    __scatterload                            0x00000585   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00000585   Thumb Code     0  init.o(.text)
+    __aeabi_llsl                             0x000005a9   Thumb Code    30  llshl.o(.text)
+    _ll_shift_l                              0x000005a9   Thumb Code     0  llshl.o(.text)
+    ConfigUART0                              0x000005c9   Thumb Code   184  comunicaciones maestro.o(i.ConfigUART0)
+    ConfigUART2                              0x00000691   Thumb Code   218  comunicaciones maestro.o(i.ConfigUART2)
+    ConfiguraSysTick                         0x00000785   Thumb Code    58  comunicaciones maestro.o(i.ConfiguraSysTick)
+    Nokia5110_ClearBuffer                    0x000007c1   Thumb Code    20  nokia5110.o(i.Nokia5110_ClearBuffer)
+    Nokia5110_DrawFullImage                  0x000007d9   Thumb Code    34  nokia5110.o(i.Nokia5110_DrawFullImage)
+    Nokia5110_Init                           0x000007fd   Thumb Code   330  nokia5110.o(i.Nokia5110_Init)
+    Nokia5110_SetCursor                      0x0000097d   Thumb Code    48  nokia5110.o(i.Nokia5110_SetCursor)
+    SysTick_Handler                          0x000009ad   Thumb Code    38  comunicaciones maestro.o(i.SysTick_Handler)
+    TransmiteCadena                          0x000009e1   Thumb Code    26  comunicaciones maestro.o(i.TransmiteCadena)
+    TxCarU0                                  0x000009fd   Thumb Code    18  comunicaciones maestro.o(i.TxCarU0)
+    TxCarU2                                  0x00000a15   Thumb Code    18  comunicaciones maestro.o(i.TxCarU2)
+    __scatterload_copy                       0x00000a2d   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00000a3b   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00000a3d   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    config_portF                             0x00000a4d   Thumb Code    44  comunicaciones maestro.o(i.config_portF)
+    delayms                                  0x00000a89   Thumb Code    18  comunicaciones maestro.o(i.delayms)
+    main                                     0x00000aed   Thumb Code   428  comunicaciones maestro.o(i.main)
+    setupADC                                 0x00000cdd   Thumb Code   274  comunicaciones maestro.o(i.setupADC)
+    tablaBienvenida                          0x00000ff4   Data         504  comunicaciones maestro.o(.constdata)
+    tabla1                                   0x000011ec   Data         504  comunicaciones maestro.o(.constdata)
+    tabla2                                   0x000013e4   Data         504  comunicaciones maestro.o(.constdata)
+    tabla3                                   0x000015dc   Data         504  comunicaciones maestro.o(.constdata)
+    tabla4                                   0x000017d4   Data         504  comunicaciones maestro.o(.constdata)
+    Region$$Table$$Base                      0x000019cc   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x000019ec   Number         0  anon$$obj.o(Region$$Table)
+    contActualizarPantalla                   0x20000000   Data           1  comunicaciones maestro.o(.data)
+    contadorGlobal                           0x20000004   Data           4  comunicaciones maestro.o(.data)
+    ActualizarPantalla                       0x20000008   Data           1  comunicaciones maestro.o(.data)
+    mov                                      0x20000009   Data           1  comunicaciones maestro.o(.data)
+    Screen                                   0x2000000c   Data         504  nokia5110.o(.bss)
+    __initial_sp                             0x20000608   Data           0  startup.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x0000026d
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x000019f8, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x000019ec, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000284   Code   RO          207  * RESET               startup.o
+    0x00000284   0x00000000   Code   RO          215  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000284   0x00000004   Code   RO          226    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000288   0x00000004   Code   RO          229    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x0000028c   0x00000000   Code   RO          231    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x0000028c   0x00000000   Code   RO          233    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x0000028c   0x00000008   Code   RO          234    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000294   0x00000000   Code   RO          236    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x00000294   0x00000000   Code   RO          238    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x00000294   0x00000004   Code   RO          227    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x00000298   0x000000e4   Code   RO          218    .text               mf_w.l(dmul.o)
+    0x0000037c   0x000000de   Code   RO          220    .text               mf_w.l(ddiv.o)
+    0x0000045a   0x0000001a   Code   RO          222    .text               mf_w.l(dfltui.o)
+    0x00000474   0x00000032   Code   RO          224    .text               mf_w.l(dfixui.o)
+    0x000004a6   0x00000020   Code   RO          240    .text               mc_w.l(llushr.o)
+    0x000004c6   0x00000000   Code   RO          242    .text               mc_w.l(iusefp.o)
+    0x000004c6   0x000000be   Code   RO          243    .text               mf_w.l(depilogue.o)
+    0x00000584   0x00000024   Code   RO          245    .text               mc_w.l(init.o)
+    0x000005a8   0x0000001e   Code   RO          247    .text               mc_w.l(llshl.o)
+    0x000005c6   0x00000002   PAD
+    0x000005c8   0x000000c8   Code   RO            1    i.ConfigUART0       comunicaciones maestro.o
+    0x00000690   0x000000f4   Code   RO            2    i.ConfigUART2       comunicaciones maestro.o
+    0x00000784   0x0000003a   Code   RO            3    i.ConfiguraSysTick  comunicaciones maestro.o
+    0x000007be   0x00000002   PAD
+    0x000007c0   0x00000018   Code   RO          119    i.Nokia5110_ClearBuffer  nokia5110.o
+    0x000007d8   0x00000022   Code   RO          121    i.Nokia5110_DrawFullImage  nokia5110.o
+    0x000007fa   0x00000002   PAD
+    0x000007fc   0x00000180   Code   RO          122    i.Nokia5110_Init    nokia5110.o
+    0x0000097c   0x00000030   Code   RO          128    i.Nokia5110_SetCursor  nokia5110.o
+    0x000009ac   0x00000034   Code   RO            6    i.SysTick_Handler   comunicaciones maestro.o
+    0x000009e0   0x0000001a   Code   RO            7    i.TransmiteCadena   comunicaciones maestro.o
+    0x000009fa   0x00000002   PAD
+    0x000009fc   0x00000018   Code   RO            8    i.TxCarU0           comunicaciones maestro.o
+    0x00000a14   0x00000018   Code   RO            9    i.TxCarU2           comunicaciones maestro.o
+    0x00000a2c   0x0000000e   Code   RO          251    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00000a3a   0x00000002   Code   RO          252    i.__scatterload_null  mc_w.l(handlers.o)
+    0x00000a3c   0x0000000e   Code   RO          253    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00000a4a   0x00000002   PAD
+    0x00000a4c   0x0000003c   Code   RO           11    i.config_portF      comunicaciones maestro.o
+    0x00000a88   0x00000018   Code   RO           12    i.delayms           comunicaciones maestro.o
+    0x00000aa0   0x0000004c   Code   RO          130    i.lcdwrite          nokia5110.o
+    0x00000aec   0x000001f0   Code   RO           14    i.main              comunicaciones maestro.o
+    0x00000cdc   0x00000138   Code   RO           16    i.setupADC          comunicaciones maestro.o
+    0x00000e14   0x00000bb8   Data   RO           17    .constdata          comunicaciones maestro.o
+    0x000019cc   0x00000020   Data   RO          249    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Base: 0x20000000, Size: 0x0000000c, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x0000000a   Data   RW           18    .data               comunicaciones maestro.o
+
+
+    Execution Region ER_ZI (Base: 0x2000000c, Size: 0x000005fc, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2000000c   0x000001f8   Zero   RW          131    .bss                nokia5110.o
+    0x20000204   0x00000004   PAD
+    0x20000208   0x00000400   Zero   RW          205    STACK               startup.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      1520        196       3000         10          0      10729   comunicaciones maestro.o
+       566         68          0          0        504       4246   nokia5110.o
+       644        620          0          0       1024        688   startup.o
+
+    ----------------------------------------------------------------------
+      2736        884       3032         12       1532      15663   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         6          0          0          2          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        30          0          0          0          0         68   llshl.o
+        32          0          0          0          0         68   llushr.o
+       222          0          0          0          0        100   ddiv.o
+       190          0          0          0          0        176   depilogue.o
+        50          0          0          0          0         76   dfixui.o
+        26          0          0          0          0         76   dfltui.o
+       228          0          0          0          0         96   dmul.o
+
+    ----------------------------------------------------------------------
+       868         16          0          0          0        728   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       148         16          0          0          0        204   mc_w.l
+       716          0          0          0          0        524   mf_w.l
+
+    ----------------------------------------------------------------------
+       868         16          0          0          0        728   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      3604        900       3032         12       1532      15299   Grand Totals
+      3604        900       3032         12       1532      15299   ELF Image Totals
+      3604        900       3032         12          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 6636 (   6.48kB)
+    Total RW  Size (RW Data + ZI Data)              1544 (   1.51kB)
+    Total ROM Size (Code + RO Data + RW Data)       6648 (   6.49kB)
+
+==============================================================================
+
